@@ -4,10 +4,12 @@ window.addEventListener('load', () => {
         title: 'Do you want to play music in the background?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#FF1493',
+        cancelButtonColor: '#FFB6C1',
         confirmButtonText: 'Yes',
         cancelButtonText: 'No',
+        background: '#FFF0F5',
+        color: '#DC143C'
     }).then((result) => {
         if (result.isConfirmed) {
             document.querySelector('.song').play();
@@ -102,7 +104,7 @@ const animationTimeline = () => {
         0.05
     )
     .to(".fake-btn", 0.1, {
-        backgroundColor: "rgb(127, 206, 248)",
+        backgroundColor: "#FF1493",
     },
     "+=4")
     .to(
@@ -121,7 +123,7 @@ const animationTimeline = () => {
     .to(".idea-3 strong", 0.5, {
         scale: 1.2,
         x: 10,
-        backgroundColor: "rgb(21, 161, 237)",
+        backgroundColor: "#FF69B4",
         color: "#fff",
     })
     .to(".idea-3", 0.7, ideaTextTransLeave, "+=2.5")
@@ -224,7 +226,7 @@ const animationTimeline = () => {
         }, {
             scale: 1,
             rotationY: 0,
-            color: "#ff69b4",
+            color: "#FF1493",
             ease: Expo.easeOut,
         },
         0.1,
