@@ -152,6 +152,38 @@ body {
   visibility: hidden;
   width: 25px;
   z-index: -1;
+  transform: translateZ(0);
+  will-change: transform, scale, opacity;
+}
+
+.eight .circle-1 {
+  fill: #FF69B4;
+  left: 15vw;
+  top: 20vh;
+}
+
+.eight .circle-2 {
+  fill: #FFB6C1;
+  left: 35vw;
+  top: 40vh;
+}
+
+.eight .circle-3 {
+  fill: #FF1493;
+  left: 55vw;
+  top: 30vh;
+}
+
+.eight .circle-4 {
+  fill: #DC143C;
+  left: 75vw;
+  top: 50vh;
+}
+
+.eight .circle-5 {
+  fill: #FF69B4;
+  left: 45vw;
+  top: 60vh;
 }
 
 .eight svg:nth-child(1) {

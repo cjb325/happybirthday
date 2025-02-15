@@ -106,7 +106,7 @@ const animationTimeline = () => {
     .to(".fake-btn", 0.1, {
         backgroundColor: "#FF1493",
     },
-    "+=4")
+    "+=1")
     .to(
         ".four",
         0.5, {
@@ -246,11 +246,12 @@ const animationTimeline = () => {
         1.5, {
             visibility: "visible",
             opacity: 0,
-            scale: 80,
-            repeat: 3,
-            repeatDelay: 1.4,
+            scale: 60,
+            repeat: 2,
+            repeatDelay: 1,
+            ease: Power1.easeOut,
         },
-        0.3
+        0.5
     )
     .to(".six", 0.5, {
         opacity: 0,
